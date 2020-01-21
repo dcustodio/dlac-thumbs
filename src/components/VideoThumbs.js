@@ -1,4 +1,16 @@
 import React from 'react';
+import styled from 'styled-components'
+
+const Button = styled.button`
+display: inline-block;
+color: palevioletred;
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border: 2px solid palevioletred;
+border-radius: 3px;
+`
+
 
 export default class VideoThumbs extends React.Component {
     constructor(props) {
@@ -23,7 +35,7 @@ export default class VideoThumbs extends React.Component {
         return (
             <div>
                 <input type="text" value={this.state.value} onChange={this.handleChange} />
-                <button className="" onClick={this.handleSubmit}>Get Thumbnails</button>
+                <Button onClick={this.handleSubmit}>Get Thumbnails</Button>
             </div>
         );
     }
