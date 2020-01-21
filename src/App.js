@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import VideoThumbs from './components/VideoThumbs'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <VideoThumbs value='click here'></VideoThumbs>
         <a
           className="App-link"
           href="https://reactjs.org"
